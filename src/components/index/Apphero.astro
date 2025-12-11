@@ -1,0 +1,40 @@
+
+---
+import AppStoreButton from "../shared/AppStoreButton.astro";
+import GooglePlayButton from "../shared/GooglePlayButton.astro";
+---
+<section class="section mt-50 overflow-hidden">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center mb-30">
+        <div class="box-phones">
+          <div class="box-phones-inner">
+            <div class="img-phone-1 wow animate__animated animate__zoomIn" data-wow-delay=".0s">
+              <img src="assets/imgs/page/homepage8/phone1.png" alt="app">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 mb-30">
+        <div class="box-our-app">
+          <span class="title-line line-48 wow animate__animated animate__fadeInUp" data-wow-delay=".0s">
+            ¿Por qué usar nuestra app?
+          </span>
+
+          <h3 class="color-brand-1 mb-20 mt-15 wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
+            Nuestra aplicación es ideal para personas, emprendedores y empresas. Nunca fue tan fácil administrar tus finanzas.
+          </h3>
+
+          <p class="font-sm color-grey-500 mb-40 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
+            Ofrecemos una experiencia segura, rápida y confiable que te permite tener el control total de tu dinero desde cualquier lugar. Nuestra plataforma está pensada para brindarte comodidad, transparencia y eficiencia en cada operación.
+          </p>
+          <div class="d-flex gap-3 flex-wrap wow animate__animated animate__zoomIn" data-wow-delay=".0s">
+            <AppStoreButton />
+            <GooglePlayButton />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

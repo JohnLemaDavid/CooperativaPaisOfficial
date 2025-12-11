@@ -1,0 +1,87 @@
+
+---
+const services = [
+  {
+    title: "Cuentas País",
+    description:
+      "Nuestras cuentas te brindan seguridad, confianza y facilidad para manejar tu dinero.",
+    img: "/assets/imgs/page/homepage1/cuentas.png",
+  },
+  {
+    title: "Créditos al Instante",
+    description:
+      "Encuentras ahorros seguros, créditos al instante, beneficios exclusivos y atención cercana.",
+    img: "/assets/imgs/page/homepage1/creditos.png",
+  },
+  {
+    title: "Ahorro y beneficios",
+    description:
+      "Programas de ahorro confiables y beneficios exclusivos para socios de la cooperativa.",
+    img: "/assets/imgs/page/homepage1/ahorros.png",
+  },
+    {
+    title: "Atención al socio",
+    description:
+      "Acompañamiento cercano y canales digitales para resolver tus necesidades financieras.",
+    img: "/assets/imgs/page/homepage1/servicio.png",
+  }
+];
+---
+
+<section class="section mt-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="color-brand-1 mb-20 wow animate__animated animate__fadeIn" data-wow-delay=".0s">Descubre Nuestros Productos</h2>
+        <p class="font-lg color-gray-500 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+Descubre nuestros productos y lo que nos diferencia: soluciones completas que combinan estrategia, diseño y tecnología.
+        </p>
+      </div>
+    </div>
+    <div class="mt-50 wow animate__animated animate__fadeIn" data-wow-delay=".0s">
+      <div class="box-swiper">
+        <div class="swiper-container swiper-group-4">
+          <div class="swiper-wrapper">
+            {services.map((service) => (
+              <div class="swiper-slide">
+                <div class="card-offer-style-3">
+                  <div class="card-head">
+                    <div class="card-image">
+                      <img src={service.img} alt={service.title} />
+                    </div>
+                    <div class="carrd-title">
+                      <h4 class="color-white">{service.title}</h4>
+                    </div>
+                  </div>
+                  <div class="card-info ">
+                    <p class="font-sm color-grey-500 mb-15">{service.description}</p>
+                    <div class="box-button-offer">
+                      <a class="btn btn-default font-sm-bold pl-0 color-brand-1 hover-up">
+                        Learn More
+                        <svg class="w-6 h-6 icon-16 ml-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div class="box-button-slider-bottom">
+            <div class="swiper-button-prev swiper-button-prev-group-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button-next-group-4">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

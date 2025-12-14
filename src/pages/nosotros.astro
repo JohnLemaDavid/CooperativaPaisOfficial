@@ -1,9 +1,7 @@
 ---
-import Apphero from "../components/index/Apphero.astro";
-import Indicadores from "../components/index/Indicadores.astro";
-import Servicios from "../components/index/Servicios.astro";
-import Slider from "../components/index/Slider.astro";
-import Solvencia from "../components/index/Solvencia.astro";
+import Bienvenidos from "../components/nosotros/Bienvenidos.astro";
+import HeroNosotros from "../components/nosotros/HeroNosotros.astro";
+import Proyeccion from "../components/nosotros/Proyeccion.astro";
 import LayoutPrincipal from "../Layouts/LayoutPrincipal.astro";
 import Footer from "../shared/Footer.astro";
 import Navbar from "../shared/Navbar.astro";
@@ -16,12 +14,10 @@ const image = "/preview-home.png";
 
 <LayoutPrincipal {title} {description} {image}>	
 <Navbar/>
-<main class="main">
-<Slider/>
-<Servicios/>
-<Apphero></Apphero>
-<Indicadores></Indicadores>
-<Solvencia></Solvencia>
+<main class="main">    
+<HeroNosotros></HeroNosotros>
+<Bienvenidos></Bienvenidos>
+<Proyeccion></Proyeccion>
 </main>
 <Footer></Footer>
 </LayoutPrincipal>

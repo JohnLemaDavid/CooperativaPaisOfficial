@@ -30,8 +30,8 @@ export type NotificationGroup = {
 
 const navData = {
   logo: {
-    desktop: { src: "assets/imgs/template/logo.png", alt: "Ecom" },
-    mobile: { src: "assets/imgs/template/logo.svg", alt: "Coop Pais" },
+    desktop: { src: "/assets/imgs/template/logo.png", alt: "Ecom" },
+    mobile: { src: "/assets/imgs/template/logo.svg", alt: "Coop Pais" },
   },
   cta: { label: "Contáctanos", href: "register.html" },
   mainMenu: [
@@ -120,13 +120,13 @@ const navData = {
           user: "Steven Job",
           text: "like started a poll in your post “How to be a good trader in 2025”",
           time: "Just now",
-          avatar: "assets/imgs/template/user1.png",
+          avatar: "/assets/imgs/template/user1.png",
         },
         {
           user: "Steven Job",
           text: "like started a poll in your post “How to be a good trader in 2025”",
           time: "Just now",
-          avatar: "assets/imgs/template/user2.png",
+          avatar: "/assets/imgs/template/user2.png",
         },
       ],
     },
@@ -137,19 +137,19 @@ const navData = {
           user: "Steven Job",
           text: "like started a poll in your post “How to be a good trader in 2025”",
           time: "Just now",
-          avatar: "assets/imgs/template/user3.png",
+          avatar: "/assets/imgs/template/user3.png",
         },
         {
           user: "Steven Job",
           text: "like started a poll in your post “How to be a good trader in 2025”",
           time: "Just now",
-          avatar: "assets/imgs/template/user4.png",
+          avatar: "/assets/imgs/template/user4.png",
         },
         {
           user: "Steven Job",
           text: "like started a poll in your post “How to be a good trader in 2025”",
           time: "Just now",
-          avatar: "assets/imgs/template/user5.png",
+          avatar: "/assets/imgs/template/user5.png",
         },
       ],
     },
